@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+
+h1 {
+    font-family: “monospace”; /*, Monaco, monospace;*/
+    text-align: center;
+    color: hsla(274, 60%, 49%, 0.97);
+} 
+
+
+li {
+    list-style-type: none;
+    text-align: center;
+    font-weight: bold;
+ 
+}
+
+header nav {
+    background-color: hsla(192, 100%, 49%, 1);
+}
+
+header li {
+    display: inline-block;   
+    padding: .5rem 2rem;
+    margin: 0;
+    border-left: 4px solid black;
+    background-color: hsla(192, 100%, 49%, 1);
+}
+
+header li:first-of-type {
+    border-left: none;
+}
+
+.float {
+    
+    margin: 4rem;
+
+}
+
+
+nav.first {
+    float: left;
+    background-color: hsla(280, 65%, 61%, 0.76);
+    display: block;
+    padding: 3rem;
+    height: 208px; 
+}
+
+.clearfloat {
+    clear: both;
+    
+}
+
+body nav li {
+    padding: .5rem 1rem;
+}
+
+
+
+article p {
+    text-align: center;
+    font-size: 8px;
+    padding: 1rem;
+}
+
+article img {
+    max-width: 30%;
+    padding: 2rem 5rem 2rem 3rem;
+}
+
+article {
+    background-color: hsla(0, 0%, 97%, 0.94);
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+footer img {
+    max-width: 3%;
+
+}
+
+article, footer, header {
+    width: 543px;
+}
+
+article {
+   height: 304px; 
+}
+
+a:link {
+    color: yellow;
+}
+
+
+/* visited link */
+a:visited {
+    color: yellow;
+}
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+/* selected link */
+a:active {
+    color: yellow;
+}
+
+
+
+    
